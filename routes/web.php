@@ -44,3 +44,6 @@ Route::get('usuario/asociar_rol',[RoleUserController::class,'asociar']);
 Route::post('usuario/asociar_rol/store',[RoleUserController::class,'store'])->name('role_user.store');
 
 route::get('consultas',[CursoController::class,'consultasElokuent']);
+
+Route::get('camionero/asociar_rol',[TruckTrukerController::class,'asociar']);
+Route::post('camionero/asociar_rol/store',[TruckTrukerController::class,'store'])->name('truck_trucker.store');

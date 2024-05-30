@@ -9,9 +9,9 @@ class Truck extends Model
 {
     use HasFactory;
 
-    public function trucks(){
+    public function truckers(){
 
-        return $this->belongsToMany('App\Models\Truck');
+        return $this->belongsToMany('App\Models\Truckers');
     }
 
 }

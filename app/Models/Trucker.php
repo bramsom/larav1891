@@ -13,9 +13,9 @@ class Trucker extends Model
         return $this->hasOne('App\Models\package');
     }
 
-    public function truckers(){
+    public function trucks(){
 
-        return $this->belongsToMany('App\Models\Trucker');
+        return $this->belongsToMany('App\Models\Trucks');
     }
 
 
