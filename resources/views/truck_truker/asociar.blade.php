@@ -16,15 +16,15 @@
         <br>
         <h1>camiones:</h1>
         <select name="truck_id">
-            @foreach($trucks as $truck)
-                <option value="{{ $truck->id }}">{{ $truck->id }} - {{ $truck->name }}</option>
+            @foreach($trucks as $Truck)
+                <option value="{{ $Truck->id }}">{{ $Truck->id }} - {{ $Truck->name }}</option>
             @endforeach
         </select>
         <br>
         <h1>camioneros:</h1>    
         <select name="trucker_id">
-            @foreach($truckers as $trucker)
-                <option value="{{ $trucker->id }}">{{ $trucker->id }} - {{ $trucker->name }}</option>
+            @foreach($truckers as $Trucker)
+                <option value="{{ $Trucker->id }}">{{ $Trucker->id }} - {{ $Trucker->name }}</option>
             @endforeach
         </select>
  
