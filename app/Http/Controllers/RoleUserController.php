@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use app\Models\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
 
 class RoleUserController extends Controller
@@ -22,6 +22,8 @@ class RoleUserController extends Controller
 
         $user=User::find($request->user_id);
         $user->roles()->attach($request->role_id);
+
+        return 'registro exitoso';
 
     }
 
